@@ -1,5 +1,3 @@
-# EV-Regenerative-Braking-System-Project
-A MATLAB/Simulink model of a bi-directional H-bridge DC-DC converter for EV regenerative braking, managing power flow and two-quadrant operation of a DC traction motor.
 # EV Regenerative Braking System: Bi-Directional H-Bridge Converter
 
 ## Overview
@@ -18,8 +16,10 @@ This project features a designed and simulated bi-directional H-bridge DC-DC con
 ## Simulation Model
 The Simulink model integrates a battery module, the H-bridge converter (using four MOSFETs/IGBTs), LC filtering, and a separately excited DC motor. The control logic relies on a complementary PWM generator to drive the switching components based on the required operation quadrant.
 
-![Simulink Model](image_822fec.png)
-*Figure 1: Complete system architecture in Simulink.*
+<figure>
+  <img src="asset/Simulink_Model.png" alt="Simulink Model">
+  <figcaption><em>Figure 1: Complete system architecture in Simulink.</em></figcaption>
+</figure>
 
 ## Results & Analysis
 The simulation was validated by analyzing real-time data scopes during motoring and braking cycles. Key observations include:
@@ -27,8 +27,10 @@ The simulation was validated by analyzing real-time data scopes during motoring 
 * **Armature Current (A) & Electrical Torque (N-m):** Reverses direction during the braking phase, indicating a shift from motoring to generating.
 * **State of Charge (SOC %):** The battery SOC noticeably increases during the regenerative braking cycle, proving successful energy recovery.
 
-![Simulation Results](Results.png)
-*Figure 2: Scope outputs displaying Speed, Armature Current, Field Current, Electrical Torque, and SOC.*
+<figure>
+  <img src="asset/Simulation_Result.png" alt="Simulation Results">
+  <figcaption><em>Figure 2: Scope outputs displaying Speed, Armature Current, Field Current, Electrical Torque, Load Torque and SOC.</em></figcaption>
+</figure>
 
 ## How to Run
 1. Clone the repository to your local machine.
